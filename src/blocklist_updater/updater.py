@@ -34,7 +34,7 @@ def main():
         commits = response.json()
 
         if not commits:
-            notifier.message = "[CRITICAL] No commits found for file."
+            notifier.message = "[CRITICAL] No commits found for file {file_path} in repo {owner}/{repo}"
             notifier.send()
             exit(1)
 
