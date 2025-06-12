@@ -39,7 +39,7 @@ This will automatically set up a virtual environment and install dependencies de
 ### Run Locally
 
 ```bash
-poetry run blocklist-updater --output /your/destination/blocklist.txt
+poetry run blocklist_updater --output /your/destination/blocklist.txt
 ```
 
 If `--output` is omitted, the default is `./blocklist.txt`.
@@ -57,7 +57,7 @@ poetry run python -m blocklist_updater
 To check daily at 10:00 AM:
 
 ```cron
-0 10 * * * /opt/homebrew/bin/poetry -C /path/to/project run blocklist-updater --output /desired/path/blocklist.txt
+0 10 * * * /opt/homebrew/bin/poetry -C /path/to/project run blocklist_updater --output /desired/path/blocklist.txt
 ```
 
 > `-C` specifies the project directory, avoiding the need for `cd`.

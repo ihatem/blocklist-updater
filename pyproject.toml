@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [project.scripts]
-blocklist-updater = "blocklist_updater.updater:main"
+blocklist_updater = "blocklist_updater.updater:main"
 
 [tool.poetry]
 packages = [
