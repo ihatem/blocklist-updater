@@ -4,7 +4,6 @@ __pycache__/
 *.log
 *.bak
 .env
-*.tmp
 *.swp
 .DS_Store
 .vscode/
