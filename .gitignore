@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.gz
+*.log
+*.bak
+.env
+*.tmp
+*.swp
+.DS_Store
+.vscode/
+.venv/
+blocklist.txt
