@@ -1,0 +1,26 @@
+[project]
+name = "blocklist-updater"
+version = "1.0.0"
+description = "Automatically fetch and update a compressed P2P blocklist from GitHub"
+authors = [
+    {name = "ihatem",email = "contact@hatem.cc"}
+]
+license = {text = "UNLICENSE"}
+readme = "README.md"
+requires-python = "^3.12"
+dependencies = [
+    "requests (>=2.32.4,<3.0.0)",
+    "notify-py (>=0.3.43,<0.4.0)"
+]
+
+[project.scripts]
+blocklist-updater = "blocklist_updater.updater:main"
+
+[tool.poetry]
+packages = [
+  { include = "blocklist_updater", from = "src" }
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
